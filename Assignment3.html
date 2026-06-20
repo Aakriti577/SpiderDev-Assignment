@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shaadi.com Profile Form</title>
+</head>
+<body>
+
+<h1>Shaadi.com Profile Registration Form</h1>
+
+<form>
+
+    
+    <input type="hidden" name="profile_id" value="SH12345">
+
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        Full Name:
+        <input type="text" name="name"><br><br>
+
+        Password:
+        <input type="password" name="password"><br><br>
+
+        Email:
+        <input type="email" name="email"><br><br>
+
+        Mobile Number:
+        <input type="tel" name="mobile"><br><br>
+
+        Age:
+        <input type="number" name="age" min="18" max="100"><br><br>
+
+        Date of Birth:
+        <input type="date" name="dob"><br><br>
+
+        Preferred Time to Contact:
+        <input type="time" name="contact_time"><br><br>
+
+        Registration Date & Time:
+        <input type="datetime-local" name="reg_time"><br><br>
+
+        Birth Month:
+        <input type="month" name="birth_month"><br><br>
+
+        Registration Week:
+        <input type="week" name="reg_week"><br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        Hobbies:
+        <input type="checkbox" name="hobby"> Reading
+        <input type="checkbox" name="hobby"> Music
+        <input type="checkbox" name="hobby"> Travelling
+        <br><br>
+
+        Upload Profile Picture:
+        <input type="file" name="photo"><br><br>
+
+        Favourite Colour:
+        <input type="color" name="color"><br><br>
+
+        Height Preference:
+        <input type="range" name="height" min="140" max="200">
+        <br><br>
+
+        Personal Website:
+        <input type="url" name="website"><br><br>
+
+        Search Community:
+        <input type="search" name="community"><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Education and Career</legend>
+
+        Qualification:
+        <input type="text" name="qualification"><br><br>
+
+        Occupation:
+        <input type="text" name="occupation"><br><br>
+
+        Annual Income:
+        <input type="number" name="income"><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>About Yourself</legend>
+
+        <textarea rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <br>
+
+    City:
+    <select>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bengaluru</option>
+        <option>Kolkata</option>
+    </select>
+
+    <br><br>
+
+    Religion:
+    <input list="religions" name="religion">
+    <datalist id="religions">
+        <option value="Hindu">
+        <option value="Muslim">
+        <option value="Sikh">
+        <option value="Christian">
+        <option value="Jain">
+    </datalist>
+
+    <br><br>
+
+  
+    <input type="submit" value="Create Profile">
+    <input type="reset" value="Reset">
+    <input type="button" value="Preview Profile">
+
+</form>
+
+</body>
+</html>
